@@ -1,0 +1,11 @@
+[package]
+name = "softsynth"
+version = "0.1.0"
+authors = ["Guillaume Pinot <texitoi@texitoi.eu>"]
+edition = "2018"
+
+[dependencies]
+cast = { version = "0.2", default-features = false }
+
+[dev-dependencies]
+byteorder = "1"

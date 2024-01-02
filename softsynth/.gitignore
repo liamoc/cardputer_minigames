@@ -1,0 +1,5 @@
+/Cargo.lock
+/target
+/bluepill-player/target
+**/*.rs.bk
+*~

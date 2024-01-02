@@ -1,0 +1,25 @@
+[package]
+name = "cardputer_minigames"
+version = "0.1.0"
+authors = ["Liam O'Connor <me@liamoc.net>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+esp32s3 = "*"
+mipidsi = "*"
+
+display-interface = "*"
+embedded-graphics = "*"
+embedded-graphics-framebuf = "*"
+hal = { package = "esp32s3-hal", version = "0.14.0" }
+esp-backtrace = { version = "0.9.0", features = ["esp32s3", "panic-handler", "exception-handler", "print-uart"] }
+esp-println = { version = "0.7.0", features = ["esp32s3"] }
+ringbuffer = { version = "0.15.0", features = [], default-features = false}
+
+[dependencies.spi-dma-displayinterface]
+path = "spi-dma-displayinterface"
+
+[dependencies.softsynth]
+path = "softsynth"
